@@ -1,11 +1,6 @@
-import {useEffect, useState} from "react";
-
-function Card(props) {
-    const [character, setCharacter] = useState(props.character);
-
-    useEffect(() => {
-        setCharacter(props.character);
-    }, [character]);
+function Card({ character }) {
+    const episodeCount = character.episode.length
+    const lastEpisode = character.episode[episodeCount - 1]
 
     return (
         <div className={"card"}>
@@ -18,14 +13,13 @@ function Card(props) {
             </section>
             <section>
                 <h6>Last known location:</h6>
-                <p>{character.location}</p>
+                <p>{character.location.name}</p>
             </section>
             <section>
                 <h6>First seen in:</h6>
-                <p>{character.episode}</p>
+                <p>{lastEpisode.name}</p>
             </section>
         </div>
     );
 }
-
 export default Card
