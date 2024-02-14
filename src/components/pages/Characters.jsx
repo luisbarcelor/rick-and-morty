@@ -1,31 +1,40 @@
-import {useState} from "react";
 import CharacterCards from "../views/CharacterCards.jsx";
+import {useNavigate, useParams} from "react-router-dom";
 
 function Characters() {
-    const [pageNumber, setPageNumber] = useState(1)
+    let { pageNum = 1} = useParams()
+    const navigate = useNavigate()
+    const page = Number(pageNum)
+
     const previousPage = () => {
-        if (pageNumber > 1)
-            setPageNumber(pageNumber - 1)
+        if (page > 1)
+            navigate(`/characters/${page - 1}`)
     }
     const nextPage = () => {
-        if (pageNumber < 42)
-            setPageNumber(pageNumber + 1);
+        if (page < 42)
+            navigate(`/characters/${page + 1}`)
+
     }
 
     return (
-        <>
-            <div className={"characters"}>
-                <button type={"button"} onClick={previousPage}>
+        <div className={"container"}>
+            <section className={"header"}>
+                <h1 className={"header__title"}>Interdimensional Character Showcase</h1>
+                <p className={"header__text"}>Meet the Wacky Cast of Rick and Morty</p>
+            </section>
+
+
+            <section className={"characters-section"}>
+                <button className={"characters-section__btn"} type={"button"} onClick={previousPage}>
                     Previous Page
                 </button>
-                <button type={"button"} onClick={nextPage}>
+                <button className={"characters-section__btn"} type={"button"} onClick={nextPage}>
                     Next Page
                 </button>
-                <br/>
-                <br/>
-                <CharacterCards pageNumber={pageNumber}/>
-            </div>
-        </>
+                <CharacterCards pageNumber={page}/>
+            </section>
+
+        </div>
     )
 }
 

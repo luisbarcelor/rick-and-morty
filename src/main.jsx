@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client"
 import App from './components/App.jsx'
-import './index.css'
+import './index.scss'
 
 const client = new ApolloClient({
     uri: 'https://rickandmortyapi.com/graphql',

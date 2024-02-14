@@ -4,22 +4,21 @@ function Card({ character }) {
 
     return (
         <div className={"card"}>
-            <section>
-                <img src={character.image}  alt={"No image"}/>
+            <img className={"card__image"} src={character.image}  alt={"No image"}/>
+            <section className={"card__section"}>
+                <h2 className={"card__name"}>{character.name}</h2>
+                <p className={"card__status"}>{character.status} - {character.species}</p>
             </section>
-            <section>
-                <h2>{character.name}</h2>
-                <p>{character.status} - {character.species}</p>
+            <section className={"card__section"}>
+                <h4 className={"card__subtitle"}>Last known location:</h4>
+                <p className={"card__location"}>{character.location.name}</p>
             </section>
-            <section>
-                <h6>Last known location:</h6>
-                <p>{character.location.name}</p>
-            </section>
-            <section>
-                <h6>First seen in:</h6>
-                <p>{lastEpisode.name}</p>
+            <section className={"card__section"}>
+                <h4 className={"card__location"}>First seen in:</h4>
+                <p className={"card__episode"}>{lastEpisode.name}</p>
             </section>
         </div>
     );
 }
+
 export default Card
