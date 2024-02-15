@@ -1,3 +1,40 @@
+@font-face {
+    font-family: 'NightPumpkind';
+    src: url("../public/fonts/NightPumpkind.ttf") format('truetype');
+}
+
+:root {
+    --primary-color: #01B4C6;
+    --secondary-color: #97CE4C;
+    --secondary-color-light: #D1E9AF;
+    --accent-color1: #FFF874;
+    --accent-color2: #BEE5FD;
+    --accent-color3: #F675DA;
+
+    --font-color-light-bg: #000000;
+    --font-color-dark-bg: #D8D8D8;
+
+    --page-padding: 2.5%;
+    --page-border-radius: 1rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'NightPumpkind', sans-serif;
+}
 
 
-/*# sourceMappingURL=index.css.map */
+
+
+
+
+

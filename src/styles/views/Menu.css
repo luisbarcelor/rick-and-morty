@@ -1,0 +1,97 @@
+.menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--secondary-color);
+    margin-right: 0;
+    padding: 2.25% var(--page-padding);
+}
+
+.menu__logo-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1rem;
+}
+
+.menu__logo {
+    display: block;
+}
+
+.menu__title {
+    color: var(--font-color-light-bg);
+    font-size: 2.5rem;
+}
+
+.menu__list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 1.25rem;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__link {
+    color: var(--font-color-light-bg);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.menu__link:hover {
+    color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.menu__link:active {
+    color: var(--font-color-dark-bg);
+}
+
+.menu__link:focus {
+    color: var(--primary-color);
+}
+
+.menu__link--btn {
+    background-color: var(--secondary-color);
+    border-radius: var(--page-border-radius);
+    border: var(--primary-color) solid 0.2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.25rem;
+}
+
+.menu__link--btn:hover {
+    color: var(--font-color-dark-bg);
+    background-color: var(--primary-color);
+    transition: 0.25s;
+}
+
+.menu__link--btn:active {
+    color: var(--font-color-light-bg);
+    background-color: var(--accent-color2);
+}
+
+.menu__link--btn:focus {
+    color: var(--font-color-light-bg);
+}
+
+.menu__link--btn:focus:hover {
+    color: var(--font-color-dark-bg);
+}
+
+.menu__link--btn:focus:active {
+    color: var(--font-color-light-bg);
+}
+
+
+
+
+

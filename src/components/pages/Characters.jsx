@@ -1,8 +1,10 @@
 import CharacterCards from "../views/CharacterCards.jsx";
 import {useNavigate, useParams} from "react-router-dom";
+import Notfound from "./Notfound.jsx";
+import "../../styles/pages/Characters.css"
 
 function Characters() {
-    let { pageNum = 1} = useParams()
+    const { pageNum = 1} = useParams()
     const navigate = useNavigate()
     const page = Number(pageNum)
 
@@ -10,11 +12,13 @@ function Characters() {
         if (page > 1)
             navigate(`/characters/${page - 1}`)
     }
+
     const nextPage = () => {
         if (page < 42)
             navigate(`/characters/${page + 1}`)
-
     }
+
+    if (page > 42 || page < 1) return <Notfound />
 
     return (
         <div className={"container"}>

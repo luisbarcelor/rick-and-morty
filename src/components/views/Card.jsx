@@ -1,3 +1,5 @@
+import "../../styles/views/Card.css"
+
 function Card({ character }) {
     const episodeCount = character.episode.length
     const lastEpisode = character.episode[episodeCount - 1]
