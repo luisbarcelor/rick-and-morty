@@ -4,15 +4,14 @@
 }
 
 :root {
-    --primary-color: #01B4C6;
+    --secondary-color-light: #E3F2CF;
+    --primary-color-light: #BEE5FD;
     --secondary-color: #97CE4C;
-    --secondary-color-light: #D1E9AF;
+    --primary-color: #01B4C6;
     --accent-color1: #FFF874;
-    --accent-color2: #BEE5FD;
-    --accent-color3: #F675DA;
-
-    --font-color-light-bg: #000000;
-    --font-color-dark-bg: #D8D8D8;
+    --accent-color2: #F675DA;
+    --black: #000000;
+    --black-shade : #292929;
 
     --page-padding: 2.5%;
     --page-border-radius: 1rem
@@ -30,6 +29,7 @@ html {
 
 body {
     font-family: 'NightPumpkind', sans-serif;
+    background-color: var(--primary-color);
 }
 
 

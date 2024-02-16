@@ -25,16 +25,17 @@ function Characters() {
             <section className={"header"}>
                 <h1 className={"header__title"}>Interdimensional Character Showcase</h1>
                 <p className={"header__text"}>Meet the Wacky Cast of Rick and Morty</p>
+                <div className={"characters-nav"}>
+                    <button className={"characters-nav__btn"} type={"button"} onClick={previousPage}>
+                        Previous Page
+                    </button>
+                    <button className={"characters-nav__btn"} type={"button"} onClick={nextPage}>
+                        Next Page
+                    </button>
+                </div>
             </section>
 
-
-            <section className={"characters-section"}>
-                <button className={"characters-section__btn"} type={"button"} onClick={previousPage}>
-                    Previous Page
-                </button>
-                <button className={"characters-section__btn"} type={"button"} onClick={nextPage}>
-                    Next Page
-                </button>
+            <section className={"card-grid"}>
                 <CharacterCards pageNumber={page}/>
             </section>
 

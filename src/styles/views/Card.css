@@ -1,3 +1,11 @@
-.card {
-    background-color: var(--primary-color);
+.card__content {
+    display: flex;
+    background-color: var(--secondary-color-light);
+    border-radius: var(--page-border-radius);
+    padding: var(--page-padding);
+}
+
+.card__image {
+    width: 15rem;
+    border-radius: var(--page-border-radius);
 }

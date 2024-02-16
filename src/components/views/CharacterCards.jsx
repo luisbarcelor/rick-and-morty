@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {useQuery} from "@apollo/client";
 import {GET_CHARACTERS} from "../../utils/GaphqlQueries.jsx";
 import Card from "./Card.jsx";
@@ -13,8 +14,8 @@ function CharacterCards({ pageNumber }) {
     return (
         <>
             {data.characters.results.map((item) => (
-                <Card character={item} key={item.id}></Card>)
-            )}
+                <Card character={item} key={item.id}></Card>
+            ))}
         </>
     )
 }
