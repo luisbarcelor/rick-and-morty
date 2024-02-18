@@ -1,0 +1,49 @@
+.btn {
+    color: var(--secondary-color);
+    font-family: var(--bold-font);
+    background-color: var(--accent-color1);
+    border-radius: var(--page-border-radius);
+    border: var(--accent-color1) solid 0.2em;
+    padding: 0.5em 1.5em;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    box-shadow: 0.2em 0.4em var(--secondary-color-shade);
+    color: var(--primary-color);
+    margin-bottom: 0.4em;
+    transition: 0.2s;
+}
+
+.btn:active {
+    box-shadow: 0.1em 0.2em var(--secondary-color-shade);
+    margin-bottom: 0.2em;
+    transition: 0.1s;
+}
+
+.btn--secondary {
+    color: var(--secondary-color);
+    font-family: var(--bold-font);
+    background-color: var(--accent-color2);
+    border-radius: var(--page-border-radius);
+    border: var(--accent-color2) solid 0.2em;
+    padding: 0.5em 1.5em;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.btn--secondary:hover {
+    box-shadow: 0.2em 0.4em var(--secondary-color-shade);
+    color: var(--primary-color);
+    margin-bottom: 0.4em;
+    transition: 0.2s;
+}
+
+.btn--secondary:active {
+    box-shadow: 0.1em 0.2em var(--secondary-color-shade);
+    margin-bottom: 0.2em;
+    transition: 0.1s;
+}

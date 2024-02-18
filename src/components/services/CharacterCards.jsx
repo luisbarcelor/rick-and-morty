@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import {useQuery} from "@apollo/client";
 import {GET_CHARACTERS} from "../../utils/GaphqlQueries.jsx";
-import Card from "./Card.jsx";
+import Card from "../views/Card.jsx";
 
 function CharacterCards({ pageNumber }) {
     const { loading, error, data } = useQuery(GET_CHARACTERS, {

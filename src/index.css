@@ -1,26 +1,33 @@
 @font-face {
-    font-family: 'NightPumpkind';
-    src: url("../public/fonts/NightPumpkind.ttf") format('truetype');
+    font-family: 'SFCartoonist';
+    src: url("../public/fonts/SFCartoonistHand.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'SFCartoonistBold';
+    src: url("../public/fonts/SFCartoonistHand-Bold.ttf") format('truetype');
 }
 
 :root {
-    --secondary-color-light: #E3F2CF;
-    --primary-color-light: #BEE5FD;
-    --secondary-color: #97CE4C;
-    --primary-color: #01B4C6;
-    --accent-color1: #FFF874;
-    --accent-color2: #F675DA;
-    --black: #000000;
-    --black-shade : #292929;
+    /* --secondary-color-light: #E3F2CF;
+    --primary-color-light: #BEE5FD; */
+    --primary-color: #fef6e4;
+    --secondary-color: #001858;
+    --secondary-color-shade: #172c66;
+    --tertiary-color: #f3d2c1;
+    --accent-color1: #f582ae;
+    --accent-color2: #8bd3dd;
 
-    --page-padding: 2.5%;
-    --page-border-radius: 1rem
+    --page-padding: 5%;
+    --page-border-radius: 0.5rem;
+    --bold-font: 'SFCartoonistBold', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'SFCartoonist', sans-serif;
 }
 
 html {
@@ -28,13 +35,19 @@ html {
 }
 
 body {
-    font-family: 'NightPumpkind', sans-serif;
     background-color: var(--primary-color);
 }
 
+::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: #fff; /* Width of the scrollbar */
+}
 
-
-
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the handle */
+    border-radius: 0.5rem; /* Radius of the handle */
+}
 
 
 

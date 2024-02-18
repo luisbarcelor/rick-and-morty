@@ -1,11 +1,12 @@
 import {Link} from "react-router-dom";
 import "../../styles/pages/Home.css"
+import morty from "../../assets/icons8-morty.svg"
 
 function Home() {
     return (
-        <div className={"container"}>
-                <section className={"header"}>
-                    <h1 className={"header__title"}>Welcome to the Rick and Morty Fan Page!</h1>
+        <div className={"home-container"}>
+                <section className={"home-header"}>
+                    <h1 className={"home-header__title"}>Welcome to the Rick and Morty Fan Page!</h1>
                 </section>
 
                 <section className={"home-section"}>

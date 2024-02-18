@@ -5,9 +5,10 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: var(--secondary-color-light);
+    background-color: var(--primary-color);
     margin-right: 0;
-    padding: 2.25% var(--page-padding);
+    margin-bottom: 4rem;
+    padding: 3% var(--page-padding);
 }
 
 .menu__logo-link {
@@ -22,8 +23,9 @@
 }
 
 .menu__title {
-    color: var(--black);
-    font-size: 2.5rem;
+    color: var(--secondary-color);
+    font-family: var(--bold-font);
+    font-size: 2rem;
 }
 
 .menu__list {
@@ -41,54 +43,17 @@
 }
 
 .menu__link {
-    color: var(--black);
+    color: var(--secondary-color);
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
+    font-family: var(--bold-font);
+    font-size: 1.2rem;
 }
 
 .menu__link:hover {
-    color: var(--accent-color2);
+    color: var(--accent-color1);
     transition: 0.1s;
 }
 
 .menu__link:focus {
-    color: var(--accent-color2);
+    color: var(--accent-color1);
 }
-
-.menu__link--btn {
-    background-color: var(--secondary-color-light);
-    border-radius: var(--page-border-radius);
-    border: var(--accent-color2) solid 0.2rem;
-    padding: 0.5rem 1.5rem;
-    font-size: 1.25rem;
-}
-
-.menu__link--btn:hover {
-    color: var(--primary-color-light);
-    background-color: var(--accent-color2);
-    transition: 0.1s;
-}
-
-.menu__link--btn:focus {
-    color: var(--black);
-}
-
-.menu__link--btn:active {
-    color: var(--black);
-    background-color: var(--secondary-color-light);
-    border-color: var(--accent-color2);
-}
-
-.menu__link--btn:focus:hover {
-    color: var(--primary-color-light);
-}
-
-.menu__link--btn:focus:active {
-    color: var(--black);
-}
-
-
-
-
-

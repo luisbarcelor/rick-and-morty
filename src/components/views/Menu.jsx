@@ -7,7 +7,7 @@ function Menu() {
         <nav className={"menu"}>
             <a className={"menu__logo-link"} href={"/home"}>
                 <img className={"menu__logo"} src={rick} alt={"No logo"}/>
-                <h2 className={"menu__title"}>Rick n&apos; Roll</h2>
+                <h2 className={"menu__title"}>Quantum Rick</h2>
             </a>
             <ul className={"menu__list"}>
                 <li className={"menu__item"}>
@@ -17,7 +17,7 @@ function Menu() {
                     <Link className={"menu__link"} to={"/characters"}>Characters</Link>
                 </li>
                 <li className={"menu__item"}>
-                    <Link className={"menu__link menu__link--btn"} to={"/about"}>About Us</Link>
+                    <Link className={"btn"} to={"/about"}>About Us</Link>
                 </li>
             </ul>
         </nav>
