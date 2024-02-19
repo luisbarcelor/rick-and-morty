@@ -4,6 +4,7 @@ import Menu from "./views/Menu.jsx";
 import Home from "./pages/Home.jsx";
 import Notfound from "./pages/Notfound.jsx";
 import Characters from "./pages/Characters.jsx";
+import Footer from "./views/Footer.jsx";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                 </Route>
                 <Route path={"*"} element={<Notfound/>} />
             </Routes>
+            <Footer></Footer>
         </Router>
     )
 }

@@ -9,8 +9,6 @@
 }
 
 :root {
-    /* --secondary-color-light: #E3F2CF;
-    --primary-color-light: #BEE5FD; */
     --primary-color: #fef6e4;
     --secondary-color: #001858;
     --secondary-color-shade: #172c66;
@@ -18,7 +16,7 @@
     --accent-color1: #f582ae;
     --accent-color2: #8bd3dd;
 
-    --page-padding: 5%;
+    --page-padding: 10%;
     --page-border-radius: 0.5rem;
     --bold-font: 'SFCartoonistBold', sans-serif;
 }

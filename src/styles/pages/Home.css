@@ -1,3 +1,95 @@
 .home-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.home-container__highlight {
+    color: var(--accent-color1);
+}
+
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding-inline: var(--page-padding);
+    padding-bottom: 4rem;
+}
+
+.home-header__text {
+    font-size: 2rem;
+}
+
+.home-header__title {
+    color: var(--secondary-color);
+    font-family: var(--bold-font);
+}
+
+.home-header__subtitle {
+    color: var(--secondary-color-shade);
+    font-size: 1.8rem;
+    margin-block: 2rem;
+    width: 62.5%;
+}
+
+.home-header__btn-holder {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 6rem;
+}
+
+.home-section {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    padding-block: 4rem;
+    padding-inline: var(--page-padding);
+    background-color: var(--tertiary-color);
+}
+
+.home-section--primary-color {
+    background-color: var(--primary-color);
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-radius: var(--page-border-radius);
+    width: 50%;
+}
+
+.home-card--tertiary-color {
+     background-color: var(--tertiary-color);
+ }
+
+.home-card__title {
+    font-family: var(--bold-font);
+    color: var(--secondary-color);
+}
+
+.home-card__text {
+    font-size: 1.8rem;
+    color: var(--secondary-color-shade);
+}
+
+.home-card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style-type: none;
+    font-size: 1.8rem;
+    color: var(--secondary-color-shade);
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+.home-card__list-item {
+    padding: 2rem;
+    background-color: var(--accent-color2);
+    border-radius: var(--page-border-radius);
 }

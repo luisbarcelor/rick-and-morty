@@ -8,7 +8,7 @@ function Card({ character }) {
 
     return (
         <div className={"card"}>
-            <img className={"card__image"} src={character.image} alt={"No image"}/>
+            <img className={"card__image"} src={character.image} alt={"No logo"}/>
 
             <div className={"card__text"}>
                 <h2 className={"card__name"}>{character.name}</h2>

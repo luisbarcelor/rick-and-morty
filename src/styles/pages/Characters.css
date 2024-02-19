@@ -1,5 +1,5 @@
 .characters-container {
-    padding-block: 4rem;
+    padding-block: 2rem;
 }
 
 .characters-header {
@@ -26,6 +26,14 @@
     padding-block: 4rem;
 }
 
+.characters-main__title {
+    color: var(--secondary-color-shade);
+    width: fit-content;
+    font-size: 2.5rem;
+    font-family: var(--bold-font);
+    margin-bottom: 1rem;
+}
+
 .characters-main__search-form {
     display: flex;
     align-items: center;
@@ -33,7 +41,7 @@
 }
 
 .characters-main__input {
-    font-size: 1rem;
+    font-size: 1.2rem;
     height: 1.5em;
     width: 24em;
     padding: 1em 0.5em;
@@ -55,17 +63,13 @@
     height: 4rem;
 }
 
-.characters-main__btn {
-    font-size: 1rem;
-}
-
 .characters-main__card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     grid-gap: 4rem;
     padding: 2rem;
     margin-top: 4rem;
-    background-color: var(--accent-color2);
+    background-color: var(--primary-color);
     border-radius: var(--page-border-radius);
     height: 60rem;
     overflow-y: scroll;

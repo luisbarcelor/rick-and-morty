@@ -1,13 +1,13 @@
 import "../../styles/views/Menu.css";
-import rick from "../../assets/rick.svg";
+import rick from "../../../public/rick.svg";
 import {Link} from "react-router-dom";
 
 function Menu() {
     return (
         <nav className={"menu"}>
-            <a className={"menu__logo-link"} href={"/home"}>
-                <img className={"menu__logo"} src={rick} alt={"No logo"}/>
-                <h2 className={"menu__title"}>Quantum Rick</h2>
+            <a className={"logo"} href={"/home"}>
+                <img className={"logo__image"} src={rick} alt={"No logo"}/>
+                <h2 className={"logo__title"}>Quantum Rick</h2>
             </a>
             <ul className={"menu__list"}>
                 <li className={"menu__item"}>
@@ -15,6 +15,9 @@ function Menu() {
                 </li>
                 <li className={"menu__item"}>
                     <Link className={"menu__link"} to={"/characters"}>Characters</Link>
+                </li>
+                <li className={"menu__item"}>
+                    <Link className={"menu__link"} to={"/merch"}>Merch</Link>
                 </li>
                 <li className={"menu__item"}>
                     <Link className={"btn"} to={"/about"}>About Us</Link>

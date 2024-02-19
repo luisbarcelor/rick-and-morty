@@ -1,12 +1,38 @@
-.btn {
+/*Logo*/
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 1.25rem;
+}
+
+.logo__image {
+    display: block;
+}
+
+.logo__title {
     color: var(--secondary-color);
     font-family: var(--bold-font);
-    background-color: var(--accent-color1);
-    border-radius: var(--page-border-radius);
-    border: var(--accent-color1) solid 0.2em;
-    padding: 0.5em 1.5em;
+    font-size: 2rem;
+}
+
+.logo__title--dark-bg {
+    color: var(--primary-color);
+}
+
+
+/*Global Buttons */
+.btn {
     font-size: 1.2rem;
+    font-family: var(--bold-font);
+    color: var(--secondary-color);
+    background-color: var(--accent-color1);
+    border: 0.2em solid var(--accent-color1);
+    border-radius: var(--page-border-radius);
+    box-shadow: 0.2em 0.4em transparent;
+    padding: 0.5em 1em;
     text-decoration: none;
+    cursor: default;
     transition: 0.2s;
 }
 
@@ -24,14 +50,16 @@
 }
 
 .btn--secondary {
-    color: var(--secondary-color);
-    font-family: var(--bold-font);
-    background-color: var(--accent-color2);
-    border-radius: var(--page-border-radius);
-    border: var(--accent-color2) solid 0.2em;
-    padding: 0.5em 1.5em;
     font-size: 1.2rem;
+    font-family: var(--bold-font);
+    color: var(--secondary-color);
+    background-color: var(--accent-color2);
+    border: 0.2em solid var(--accent-color2);
+    border-radius: var(--page-border-radius);
+    box-shadow: 0.2em 0.4em transparent;
+    padding: 0.5em 1em;
     text-decoration: none;
+    cursor: default;
     transition: 0.2s;
 }
 
@@ -46,4 +74,54 @@
     box-shadow: 0.1em 0.2em var(--secondary-color-shade);
     margin-bottom: 0.2em;
     transition: 0.1s;
+}
+
+
+/*Global accordion image*/
+.accordion-image {
+    padding-right: 4rem;
+    padding-top: 4rem;
+}
+
+.accordion-image__image-container {
+    position: relative;
+}
+
+.accordion-image__back-card {
+    position: absolute;
+    z-index: 1;
+    top: -4rem;
+    right: -4rem;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color-shade);
+    border-radius: var(--page-border-radius);
+}
+
+.accordion-image__image-holder {
+    position: relative;
+    z-index: 2;
+    border-radius: var(--page-border-radius);
+    border: 0.25rem solid var(--secondary-color);
+    background-color: var(--accent-color2);
+    box-shadow: 2rem -2rem var(--accent-color1);
+}
+
+.accordion-image__image {
+    position: relative;
+    width: 25rem;
+}
+
+.accordion-image--left {
+    padding-right: 0;
+    padding-left: 4rem;
+}
+
+.accordion-image__back-card--left {
+    right: 0;
+    left: -4rem;
+}
+
+.accordion-image__image-holder--left {
+    box-shadow: -2rem -2rem var(--accent-color1);
 }

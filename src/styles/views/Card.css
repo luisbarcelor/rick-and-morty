@@ -1,9 +1,9 @@
 .card {
     display: flex;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color2);
     border-radius: var(--page-border-radius);
-    padding: var(--page-padding);
+    padding: 1rem;
 }
 
 .card:hover {
@@ -11,27 +11,23 @@
 }
 
 .card__image {
-    width: 30%;
+    width: 35%;
     border-radius: var(--page-border-radius);
 }
 
 .card__text {
-    width: 50%;
-    color: var(--secondary-color-shade);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    color: var(--secondary-color-shade);
     font-size: 1.5rem;
-    gap: 1rem;
     padding-inline: 2rem;
 }
 
 .card__name, .card__subtitle {
     color: var(--secondary-color);
     font-family: var(--bold-font);
-}
-
-.card__subtitle {
-    margin-top: 0.5rem;
 }
 
 .card__btn-holder {
@@ -43,6 +39,6 @@
 
 .card__btn {
     text-align: center;
+    font-size: 1.15em;
     width: 100%;
-    font-size: 1rem;
 }
