@@ -1,6 +1,7 @@
 .home-container {
     display: flex;
     flex-direction: column;
+    padding-top: 6rem;
 }
 
 .home-container__highlight {
