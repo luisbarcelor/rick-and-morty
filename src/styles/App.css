@@ -23,7 +23,7 @@
 
 /*Global Buttons */
 .btn {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: var(--bold-font);
     color: var(--secondary-color);
     background-color: var(--accent-color1);

@@ -1,5 +1,8 @@
 import "../../styles/views/Footer.css";
 import rick from "../../../public/rick.svg";
+import phone from "../../assets/phone.svg"
+import mail from "../../assets/mail.svg"
+import github from "../../assets/github.svg"
 
 function Footer() {
 
@@ -16,9 +19,21 @@ function Footer() {
                     <div className={"footer-container__contact"}>
                         <h2 className={"footer-container__title"}>Contact</h2>
                         <ul className={"footer-container__list"}>
-                            <li className={"footer-container__list-item"}>+1 234 567 890</li>
-                            <li className={"footer-container__list-item"}>info@gmail.com</li>
-                            <li className={"footer-container__list-item"}>Github</li>
+                            <li className={"footer-container__list-item"}>
+                                <img className={"footer-container__icon"} src={phone} alt={"No icon"}/>
+                                <span className={"footer-container__list-text"}>+34 722 11 65 25</span>
+                            </li>
+                            <li className={"footer-container__list-item"}>
+                                <img className={"footer-container__icon"} src={mail} alt={"No icon"}/>
+                                <span className={"footer-container__list-text"}>luisbarcelor@hotmail.com</span>
+                            </li>
+                            <li className={"footer-container__list-item"}>
+                                <img className={"footer-container__icon"} src={github} alt={"No icon"}/>
+                                <a className={"footer-container__list-text footer-container__link"}
+                                   href={"https://github.com/luisbarcelor"}>
+                                    https://github.com/luisbarcelor
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div className={"footer-container__about"}>
@@ -33,24 +48,21 @@ function Footer() {
                             with fellow tech enthusiasts.
                         </p>
                     </div>
-                    <ul className={"footer-container__menu"}>
-                        <li className={"footer-container__menu-item"}>
-                            <a className={"footer-container__menu-link"} href={"/home"}>Home</a>
-                        </li>
-                        <li className={"footer-container__menu-item"}>
-                            <a className={"footer-container__menu-link"} href={"/characters"}>Characters</a>
-                        </li>
-                        <li className={"footer-container__menu-item"}>
-                            <a className={"footer-container__menu-link"} href={"/home"}>Merch</a>
-                        </li>
-                    </ul>
                 </div>
-                <div className={"footer-container__copyright"}>
-                    Copyright&copy;
-                    <a className={"footer-container__copyright-link"} href={"https://github.com/luisbarcelor"}>
-                        Luis Barceló
-                    </a> 2024
-                </div>
+            </div>
+            <ul className={"footer-container__menu"}>
+                <li className={"footer-container__menu-item"}>
+                    <a className={"footer-container__link"} href={"/home"}><b>Home</b></a>
+                </li>
+                <li className={"footer-container__menu-item"}>
+                    <a className={"footer-container__link"} href={"/characters"}><b>Characters</b></a>
+                </li>
+                <li className={"footer-container__menu-item"}>
+                    <a className={"footer-container__link"} href={"/merch"}><b>Merch</b></a>
+                </li>
+            </ul>
+            <div className={"footer-container__copyright"}>
+                <span><b>Copyright&copy; Luis Barceló 2024</b></span>
             </div>
         </div>
     );

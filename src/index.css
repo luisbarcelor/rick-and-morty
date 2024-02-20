@@ -10,6 +10,7 @@
 
 :root {
     --primary-color: #fef6e4;
+    --primary-color-shade: #FEF6E4BF;
     --secondary-color: #001858;
     --secondary-color-shade: #172c66;
     --tertiary-color: #f3d2c1;
@@ -34,6 +35,18 @@ html {
 
 body {
     background-color: var(--primary-color);
+}
+
+b {
+    font-family: 'SFCartoonistBold', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 ::-webkit-scrollbar {

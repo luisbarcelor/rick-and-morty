@@ -10,7 +10,7 @@ function Home() {
         <div className={"home-container"}>
             <section className={"home-header"}>
                 <div className={"home-header__text"}>
-                    <h1 className={"home-header__title"}>Welcome to the <span className={"home-container__highlight"}>Quantum Rick</span> Fan Page!</h1>
+                    <h1 className={"home-header__title"}>Welcome to <span className={"home-container__highlight"}>The Quantum Rick</span> Fan Page!</h1>
                     <p className={"home-header__subtitle"}>
                         Dive into the bizarre universe of Rick and Morty, where every
                         adventure is a mix of humor, science fiction,
@@ -42,7 +42,7 @@ function Home() {
                     </div>
                 </div>
                 <div className={"home-card"}>
-                    <h2 className={"home-card__title"}>Why our page <span className={"home-container__highlight"}>exists</span>?</h2>
+                    <h2 className={"home-card__title"}>What&apos;s this <span className={"home-container__highlight"}>website</span>?</h2>
                     <p className={"home-card__text"}>
                         This fan page dedicated to the amazing characters from the hit animated TV
                         show <em>Rick and Morty!</em> Explore our collection of character profiles, episode
@@ -57,24 +57,24 @@ function Home() {
             </section>
 
             <section className={"home-section home-section--primary-color"}>
-                <div className={"home-card home-card--tertiary-color"}>
-                    <h2 className={"home-card__title"}>Key Features</h2>
+                <div className={"home-card home-card--dotted"}>
+                    <h2 className={"home-card__title home-card__title"}>Rick-tastic <span
+                        className={"home-container__highlight"}>features</span></h2>
                     <ul className={"home-card__list"}>
-                        <li className={"home-card__list-item"}>
-                            Episode Guide: A comprehensive guide to all episodes, including summaries, air dates,
+                    <li className={"home-card__list-item"}>
+                            <b>Episode Guide:</b> A comprehensive guide to all episodes, including summaries, air dates,
                             and notable moments.
                         </li>
                         <li className={"home-card__list-item"}>
-                            Character Database: Detailed profiles for each main and recurring character, including
+                            <b>Character Database:</b> Detailed profiles for each main and recurring character, including
                             their backstory, personality traits, and notable quotes.
                         </li>
                         <li className={"home-card__list-item"}>
-                            Search Functionality: A search bar that allows users to quickly find specific episodes,
+                            <b>Search Functionality:</b> A search bar that allows users to quickly find specific episodes,
                             characters, or topics of interest on the fan page.
                         </li>
                         <li className={"home-card__list-item"}>
-                            Merchandise Showcase: A gallery showcasing official Rick and Morty merchandise,
-                            with links to purchase items.
+                            <b>Merchandise Showcase:</b> A gallery showcasing official Rick and Morty merchandise.
                         </li>
                     </ul>
                 </div>
@@ -89,16 +89,20 @@ function Home() {
             </section>
 
             <section className={"home-section"}>
-                <div className={"home-card"}>
-                    <h2 className={"home-card__title"}>Get Involved</h2>
+                <div className={"home-card home-card--bottom"}>
+                    <h2 className={"home-card__title"}>Merch <span
+                        className={"home-container__highlight"}>Madness</span>!</h2>
                     <p className={"home-card__text"}>
-                        Are you a fellow fan of <em>Rick and Morty</em>? Join our community to discuss your favorite
-                        characters, episodes, and theories. Connect with like-minded fans and share your passion!
+                        Gear Up for <em>Rick and Morty Merch Madness!</em> Dive into a
+                        world of exclusive merchandise tailored just for you. From iconic characters to unforgettable
+                        episodes, our collection has it all. Elevate your fandom with must-have apparel and collectibles
+                        that scream &apos;Wubba Lubba Dub Dub!&apos; Explore the multiverse of <em>Rick and Morty</em> merch
+                        now!
                     </p>
                     <div className={"home-card__actions"}>
-                        <Link className={"home-card__btn"} to={"/sign"}>Sign up</Link>
+                        <Link className={"home-card__btn btn--secondary"} to={"/characters"}>View Characters</Link>
                         <p className={"home-card__text"}>or</p>
-                        <Link className={"home-card__btn"} to={"/characters"}>Go to characters</Link>
+                        <Link className={"home-card__btn btn"} to={"/merch"}>View Merch</Link>
                     </div>
                 </div>
             </section>

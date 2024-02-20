@@ -1,11 +1,11 @@
 .home-container {
     display: flex;
     flex-direction: column;
-    padding-bottom: 2rem;
 }
 
 .home-container__highlight {
     color: var(--accent-color1);
+    font-family: var(--bold-font);
 }
 
 .home-header {
@@ -29,6 +29,7 @@
     color: var(--secondary-color-shade);
     font-size: 1.8rem;
     margin-block: 2rem;
+    text-align: justify;
     width: 62.5%;
 }
 
@@ -42,7 +43,7 @@
 .home-section {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
+    align-items: center;
     padding-block: 4rem;
     padding-inline: var(--page-padding);
     background-color: var(--tertiary-color);
@@ -61,11 +62,16 @@
     background-color: var(--primary-color);
     border-radius: var(--page-border-radius);
     width: 50%;
+    text-align: justify;
 }
 
-.home-card--tertiary-color {
-     background-color: var(--tertiary-color);
- }
+.home-card--dotted {
+    border: 0.25rem dotted var(--secondary-color-shade);
+}
+
+.home-card--bottom {
+    width: 100%;
+}
 
 .home-card__title {
     font-family: var(--bold-font);
@@ -84,12 +90,19 @@
     list-style-type: none;
     font-size: 1.8rem;
     color: var(--secondary-color-shade);
-    height: 20rem;
-    overflow-y: scroll;
+    scrollbar-width: none;
+    border-radius: var(--page-border-radius);
 }
 
 .home-card__list-item {
-    padding: 2rem;
+    padding: 1rem;
     background-color: var(--accent-color2);
     border-radius: var(--page-border-radius);
+}
+
+.home-card__actions {
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    gap: 1rem;
 }

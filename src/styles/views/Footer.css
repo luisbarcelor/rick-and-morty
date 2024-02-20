@@ -1,15 +1,121 @@
 .footer-container {
-    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color-shade);
     padding-inline: var(--page-padding);
-    padding-block: 2rem;
+    padding-top: 2rem;
+}
+
+.footer-container__link {
+    color: var(--primary-color-shade);
+    transition: 0.1s;
+}
+
+.footer-container__link:hover {
+    color: var(--accent-color1);
+    transition: 0.1s;
+}
+
+.footer-container__link:active {
+    color: var(--accent-color2);
+    transition: 0.1s;
 }
 
 .footer-container__logo-holder {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .footer-container__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
     border-radius: var(--page-border-radius);
-    background-color: var(--secondary-color-shade);
+    padding-inline: 4rem;
+    padding-block: 2rem;
 }
+
+.footer-container__text {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    text-align: justify;
+    font-size: 1.5rem;
+}
+
+.footer-container__contact, .footer-container__about {
+    flex: 0.25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container__title {
+    color: var(--primary-color-shade);
+    font-family: var(--bold-font);
+    padding-block: 1rem;
+    border-bottom: 1px solid rgba(254, 246, 228, 0.2);
+    width: 100%;
+    text-align: center;
+}
+
+.footer-container__paragraph {
+    font-size: 0.8em;
+    margin-top: 1.5rem;
+    padding-inline: 1rem;
+    color: var(--primary-color-shade);
+}
+
+.footer-container__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    padding-inline: 1rem;
+}
+
+.footer-container__list-item {
+    display: flex;
+    align-items: center;
+}
+
+.footer-container__list-text {
+    font-size: 0.85em;
+    font-family: var(--bold-font);
+    color: var(--primary-color-shade);
+}
+
+.footer-container__icon {
+    width: 1.5em;
+    margin-right: 0.75em;
+}
+
+.footer-container__menu {
+    display: flex;
+    justify-content: center;
+    padding-block: 1.25rem;
+    border-top: 1px solid rgba(254, 246, 228, 0.2);
+    gap: 1rem;
+    width: 50%;
+}
+
+.footer-container__menu-item {
+    font-size: 1.1rem;
+}
+
+.footer-container__copyright {
+    display: flex;
+    justify-content: center;
+    padding-block: 0.25em;
+    font-size: 1rem;
+    background-color: var(--secondary-color);
+    width: 50%;
+    color: rgba(254, 246, 228, 0.2);
+}
+
+
+
