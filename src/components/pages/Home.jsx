@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import "../../styles/pages/Home.css";
 import morty from "../../assets/morty.svg";
 import beth from "../../assets/beth.svg";
@@ -17,9 +16,9 @@ function Home() {
                         and existential dread.
                     </p>
                     <div className={"home-header__btn-holder"}>
-                        <Link className={"home-header__btn btn"} to={"/characters"}>
+                        <a className={"home-header__btn btn"} href={"/characters"}>
                             View Characters
-                        </Link>
+                        </a>
                     </div>
                 </div>
                 <div className={"accordion-image"}>
@@ -42,7 +41,7 @@ function Home() {
                     </div>
                 </div>
                 <div className={"home-card"}>
-                    <h2 className={"home-card__title"}>What&apos;s this <span className={"home-container__highlight"}>website</span>?</h2>
+                    <h2 className={"home-card__title"}>What&apos;s this <span className={"home-container__highlight"}>Website</span>?</h2>
                     <p className={"home-card__text"}>
                         This fan page dedicated to the amazing characters from the hit animated TV
                         show <em>Rick and Morty!</em> Explore our collection of character profiles, episode
@@ -59,7 +58,7 @@ function Home() {
             <section className={"home-section home-section--primary-color"}>
                 <div className={"home-card home-card--dotted"}>
                     <h2 className={"home-card__title home-card__title"}>Rick-tastic <span
-                        className={"home-container__highlight"}>features</span></h2>
+                        className={"home-container__highlight"}>Features</span></h2>
                     <ul className={"home-card__list"}>
                     <li className={"home-card__list-item"}>
                             <b>Episode Guide:</b> A comprehensive guide to all episodes, including summaries, air dates,
@@ -100,9 +99,9 @@ function Home() {
                         now!
                     </p>
                     <div className={"home-card__actions"}>
-                        <Link className={"home-card__btn btn--secondary"} to={"/characters"}>View Characters</Link>
+                        <a className={"home-card__btn btn--secondary"} href={"/characters"}>View Characters</a>
                         <p className={"home-card__text"}>or</p>
-                        <Link className={"home-card__btn btn"} to={"/merch"}>View Merch</Link>
+                        <a className={"home-card__btn btn"} href={"/merch"}>View Merch</a>
                     </div>
                 </div>
             </section>

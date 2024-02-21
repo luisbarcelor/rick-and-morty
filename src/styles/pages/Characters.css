@@ -40,12 +40,13 @@
 }
 
 .characters-main__input {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     height: 1.75em;
     width: 24em;
     padding: 1em 0.5em;
     border: 0.15rem solid var(--secondary-color);
     background-color: var(--primary-color);
+    font-family: var(--bold-font);
     border-radius: var(--page-border-radius);
     margin-right: 1em;
 }
@@ -53,6 +54,12 @@
 .characters-main__input:focus {
     outline: 0.15em solid var(--accent-color1);
     outline-offset: 0.05em;
+}
+
+.characters-main__form-warning {
+    font-size: 1.05rem;
+    color: rgba(255, 0, 0, 0.8);
+    margin-bottom: 0.5rem;
 }
 
 .characters-main__btn-container {

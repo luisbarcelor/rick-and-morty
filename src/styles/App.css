@@ -23,16 +23,16 @@
 
 /*Global Buttons */
 .btn {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: var(--bold-font);
     color: var(--secondary-color);
     background-color: var(--accent-color1);
     border: 0.2em solid var(--accent-color1);
     border-radius: var(--page-border-radius);
-    box-shadow: 0.2em 0.4em transparent;
     padding: 0.5em 1em;
     text-decoration: none;
     cursor: default;
+    text-align: center;
     transition: 0.2s;
 }
 
@@ -56,10 +56,10 @@
     background-color: var(--accent-color2);
     border: 0.2em solid var(--accent-color2);
     border-radius: var(--page-border-radius);
-    box-shadow: 0.2em 0.4em transparent;
     padding: 0.5em 1em;
     text-decoration: none;
     cursor: default;
+    text-align: center;
     transition: 0.2s;
 }
 
@@ -124,4 +124,12 @@
 
 .accordion-image__image-holder--left {
     box-shadow: -2rem -2rem var(--accent-color1);
+}
+
+.hidden-element {
+    visibility: hidden;
+}
+
+.visible-element {
+    visibility: visible;
 }

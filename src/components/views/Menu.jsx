@@ -20,7 +20,7 @@ function Menu() {
                     <Link className={"menu__link"} to={"/merch"}>Merch</Link>
                 </li>
                 <li className={"menu__item"}>
-                    <Link className={"btn"} to={"/about"}>About Us</Link>
+                    <a className={"btn"} href={"/about"}>About Us</a>
                 </li>
             </ul>
         </nav>

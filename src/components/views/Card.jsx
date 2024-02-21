@@ -1,10 +1,8 @@
-/* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
 import "../../styles/views/Card.css"
 
 function Card({ character }) {
-    const episodeCount = character.episode.length
-    const lastEpisode = character.episode[episodeCount - 1]
+    const episodeCount = character.episode.length;
+    const lastEpisode = character.episode[episodeCount - 1];
 
     return (
         <div className={"card"}>
@@ -19,9 +17,9 @@ function Card({ character }) {
                 <p className={"card__episode"}>{lastEpisode.name}</p>
             </div>
             <div className={"card__btn-holder"}>
-                <Link to={"/"} className={"card__btn btn"}>
+                <a className={"card__btn btn"} href={"/characters/id/" + character.id}>
                     Learn more
-                </Link>
+                </a>
             </div>
         </div>
     );

@@ -4,22 +4,27 @@
     background-color: var(--accent-color2);
     border-radius: var(--page-border-radius);
     padding: 1rem;
+    box-shadow: 0 0 0.5rem 0 var(--secondary-color);
+    transition: 0.2s;
 }
 
 .card:hover {
-    outline: 0.5rem solid var(--accent-color1);
+    transform: translateY(-1.5%);
+    box-shadow: 0 0.2rem 1rem 0 var(--secondary-color);
+    transition: 0.2s;
 }
 
 .card__image {
     width: 35%;
+    flex: 1;
     border-radius: var(--page-border-radius);
 }
 
 .card__text {
     display: flex;
+    flex: 3;
     flex-direction: column;
     justify-content: space-between;
-    width: 50%;
     color: var(--secondary-color-shade);
     font-size: 1.5rem;
     padding-inline: 2rem;
@@ -31,14 +36,13 @@
 }
 
 .card__btn-holder {
-    width: 20%;
     display: flex;
-    justify-content: center;
+    flex: 2;
+    justify-content: end;
     align-items: end;
 }
 
 .card__btn {
-    text-align: center;
-    font-size: 1.15em;
-    width: 100%;
+    font-size: 1.1em;
+    width: fit-content;
 }

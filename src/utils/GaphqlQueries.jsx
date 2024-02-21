@@ -21,3 +21,25 @@ export const GET_CHARACTERS = gql`
     }
 `;
 
+export const SEARCH_CHARACTERS = gql`
+    query Search_Character($searchTerm: String!) {
+      characters(filter: {name: $searchTerm}) {
+        results {
+          id
+          name
+          status
+          species
+          type
+          gender
+          image
+          location {
+            name
+          }
+          episode {
+            name
+          }
+        }
+      }
+    }
+`;
+
