@@ -1,8 +1,7 @@
-import CharacterCards from "../services/CharacterCards.jsx";
+import CharacterCards from "../views/CharacterCards.jsx";
 import {useNavigate, useParams} from "react-router-dom";
 import Notfound from "./Notfound.jsx";
 import "../../styles/pages/Characters.css"
-import SearchCards from "../services/SearchCards.jsx";
 import {useState} from "react";
 
 function Characters() {
@@ -82,11 +81,7 @@ function Characters() {
                     </div>
                 </div>
                 <div className={"characters-main__card-grid"}>
-                    {isSearching ? (
-                        <SearchCards searchTerm={searchValue}/>
-                    ) : (
-                        <CharacterCards pageNumber={page}/>
-                    )}
+                    <CharacterCards pageNumber={page}/>
                 </div>
             </section>
         </div>
