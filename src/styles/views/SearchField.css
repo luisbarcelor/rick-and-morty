@@ -1,0 +1,16 @@
+.search-field {
+    font-size: 1.2rem;
+    height: 1.75em;
+    width: 24em;
+    padding: 1em 0.5em;
+    border: 0.15rem solid var(--secondary-color);
+    background-color: var(--primary-color);
+    font-family: var(--bold-font);
+    border-radius: var(--page-border-radius);
+    margin-right: 1em;
+}
+
+.search-field:focus {
+    outline: 0.15em solid var(--accent-color1);
+    outline-offset: 0.05em;
+}

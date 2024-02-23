@@ -15,7 +15,7 @@ function App() {
                 <Route path={"/home"} element={<Home/>} />
                 <Route path={"/characters"} element={<Outlet />}>
                     <Route index element={<Characters />} />
-                    <Route path={":pageNum"} element={<Characters/>} />
+                    <Route path={":page"} element={<Characters/>} />
                 </Route>
                 <Route path={"*"} element={<Notfound/>} />
             </Routes>
