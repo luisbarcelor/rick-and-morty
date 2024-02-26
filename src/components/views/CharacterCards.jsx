@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import CharactersService from "../services/CharactersService.js";
+import CharactersService from "../../services/CharactersService.js";
 import Card from "./Card.jsx";
 import {useEffect, useState} from "react";
 

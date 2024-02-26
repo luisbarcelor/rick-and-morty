@@ -2,8 +2,8 @@ import CharacterCards from "../views/CharacterCards.jsx";
 import {useNavigate, useParams} from "react-router-dom";
 import Notfound from "./Notfound.jsx";
 import "../../styles/pages/Characters.css"
-import {useEffect, useRef, useState} from "react";
-import {validate} from "../services/ValidationService.js";
+import {useRef} from "react";
+import {validate} from "../../services/ValidationService.js";
 import SearchField from "../views/SearchField.jsx";
 
 function Characters() {
@@ -11,9 +11,7 @@ function Characters() {
     const searchValue = useRef("");
     const randomPage = useRef(Math.floor((Math.random() * 42) + 1));
     const { page= randomPage.current} = useParams();
-    const pageNum = Number(page)
-
-    //TODO: Fix navigate bug after successful search
+    const pageNum = Number(page);
 
     const previousPage = () => {
         searchValue.current = "";
