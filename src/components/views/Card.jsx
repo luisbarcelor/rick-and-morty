@@ -1,4 +1,5 @@
-import "../../styles/views/Card.css"
+/* eslint-disable react/prop-types */
+import "../../styles/views/Card.css";
 
 function Card({ character }) {
     const episodeCount = character.episode.length;
@@ -6,7 +7,7 @@ function Card({ character }) {
 
     return (
         <div className={"card"}>
-            <img className={"card__image"} src={character.image} alt={"No logo"}/>
+            <img className={"card__image"} src={character.image} alt={"Missing character"}/>
 
             <div className={"card__text"}>
                 <h2 className={"card__name"}>{character.name}</h2>

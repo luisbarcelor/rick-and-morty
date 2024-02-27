@@ -16,6 +16,8 @@
     --tertiary-color: #f3d2c1;
     --accent-color1: #f582ae;
     --accent-color2: #8bd3dd;
+    --skeleton-color: #f0f0f0;
+    --skeleton-color-shade: #f0f0f099;
 
     --page-padding: 10%;
     --page-border-radius: 0.5rem;

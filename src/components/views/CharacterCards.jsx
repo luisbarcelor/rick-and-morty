@@ -2,6 +2,7 @@
 import CharactersService from "../../services/CharactersService.js";
 import Card from "./Card.jsx";
 import {useEffect, useState} from "react";
+import SkeletonGenerator from "./SkeletonGenerator.jsx";
 
 function CharacterCards({ pageNumber, searchTerm }) {
     const [data, setData] = useState(null);
@@ -10,7 +11,7 @@ function CharacterCards({ pageNumber, searchTerm }) {
 
     useEffect( () => {
         setLoading(true)
-        if (searchTerm !== "") {
+        if (!searchTerm) {
             CharactersService.searchCharacters(searchTerm)
                 .then(response => response.json())
                 .then(data => setData(data))
@@ -25,7 +26,7 @@ function CharacterCards({ pageNumber, searchTerm }) {
         }
     }, [pageNumber, searchTerm])
 
-    if (loading) return <p>Loading...</p>
+    if (loading) return <SkeletonGenerator count={20}/>
     if (error) return <p>Error! {error.message}</p>
 
     return (
