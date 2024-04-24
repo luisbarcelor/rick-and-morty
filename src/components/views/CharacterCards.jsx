@@ -11,7 +11,7 @@ function CharacterCards({ pageNumber, searchTerm }) {
 
     useEffect( () => {
         setLoading(true)
-        if (!searchTerm) {
+        if (searchTerm) {
             CharactersService.searchCharacters(searchTerm)
                 .then(response => response.json())
                 .then(data => setData(data))
