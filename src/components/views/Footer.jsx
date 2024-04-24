@@ -1,5 +1,5 @@
 import "../../styles/views/Footer.css";
-import rick from "../../../public/rick.svg";
+import rick from "../../assets/rick.svg";
 import phone from "../../assets/phone.svg"
 import mail from "../../assets/mail.svg"
 import github from "../../assets/github.svg"

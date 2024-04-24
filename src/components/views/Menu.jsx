@@ -1,5 +1,5 @@
 import "../../styles/views/Menu.css";
-import rick from "../../../public/rick.svg";
+import rick from "../../assets/rick.svg";
 import {Link} from "react-router-dom";
 
 function Menu() {

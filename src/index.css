@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'SFCartoonist';
-    src: url("../public/fonts/SFCartoonistHand.ttf") format('truetype');
+    src: url("assets/fonts/SFCartoonistHand.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'SFCartoonistBold';
-    src: url("../public/fonts/SFCartoonistHand-Bold.ttf") format('truetype');
+    src: url("assets/fonts/SFCartoonistHand-Bold.ttf") format('truetype');
 }
 
 :root {
