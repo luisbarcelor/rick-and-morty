@@ -9,7 +9,7 @@ import Footer from "./views/Footer.jsx";
 function App() {
     return (
         <Router>
-            <Menu></Menu>
+            <Menu/>
             <Routes>
                 <Route index element={<Navigate to={"/home"}/>} />
                 <Route path={"/home"} element={<Home/>} />
@@ -19,7 +19,7 @@ function App() {
                 </Route>
                 <Route path={"*"} element={<Notfound/>} />
             </Routes>
-            <Footer></Footer>
+            <Footer/>
         </Router>
     )
 }
